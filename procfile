@@ -1,1 +1,2 @@
-web: gunicorn filesharingbasic.wsgi --log-file -
+web: gunicorn upsharing.wsgi
+release : python manage.py migrate
